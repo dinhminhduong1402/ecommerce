@@ -1,0 +1,64 @@
+
+html {
+  scroll-behavior: smooth;
+}
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-layout {
+  * {
+    animation: fade-in 1s ease;
+    margin: 0;
+    transition: 0.7s;
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  
+  &::-webkit-scrollbar {
+    background-color: unset;
+    width: 6px;
+    height: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(239, 70, 38);
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style: none;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+button {
+  cursor: pointer;
+}

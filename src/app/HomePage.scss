@@ -1,0 +1,250 @@
+.banner-slider-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .banner-slider-container {
+    max-width: 1200px;
+    width: 100vw;
+  }
+}
+
+.hero-banner {
+  width: 100vw;
+  height: 590px;
+  display: flex;
+  justify-content: center;
+
+  .hero-banner-container {
+    width: 100vw;
+    max-width: 1200px;
+    height: 590px;
+    background-image: url('../asset/hero-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    
+  }
+
+  
+}
+
+.best-seller-products {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+
+  .best-seller-products-container {
+    width: 100vw;
+    max-width: 1200px;
+    .section-title {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 0 40px 20px 40px;
+    }
+
+    .products-slider {
+     padding: 0 40px;
+    }
+  }
+}
+
+.featured-products {
+  width: 100vw;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+
+  .featured-products-container {
+    width: 100vw;
+    max-width: 1200px;
+    height: 470px;
+
+    .section-title {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 0 40px 20px 40px;
+    }
+
+    .products-slider {
+     padding: 0 40px;
+    }
+  }
+}
+
+.brands-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .brands-container {
+    width: 100vw;
+    max-width: 1200px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    li {
+      opacity: 0.5;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      } 
+    }
+  }
+}
+
+.sub-banner {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .sub-banner-container {
+    margin: 40px 0;
+    width: 100vw;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    background-color: #F9F2ED;
+    
+    .image-wapper {
+      width: 50%;
+      line-height: 0;
+    }
+
+    .text-wrapper {
+      width: 50%;
+      width: 50%;
+      margin: 0 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 30px;
+      text-align: center;
+      
+      h6, h2, p, button {
+        color: #000;
+      }
+
+      h2 {
+        font-size: 3rem;
+        font-weight: 200;
+      }
+
+      button {
+        font-weight: 600;
+        border: #000 solid 0.3px;
+        background-color: unset;
+        height: 45px;
+        width: 100px;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+
+.pupolar-catogory-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .popular-catogory-container{
+    width: 100vw;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+
+    .title-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 20px;
+      text-align: center;
+      padding: 40px;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .catogory-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        list-style-type: none;
+
+        li, .catogory-card {
+          position: relative;
+          width: 20%;
+          line-height: 0;
+          overflow: hidden;
+          cursor: pointer;
+          &:hover img {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+          }
+
+          .img {
+            object-fit: contain;
+            
+          }
+
+          .content {
+            background-color: rgba(0, 0, 0, 0.1);
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            text-align: center;
+
+            h2 {
+              font-size: 2rem;
+            }
+
+            button {
+              font-size: 0.6rem;
+              color: #fff;
+              background-color: unset;
+              border: none;
+              border-bottom: 1px solid #fff;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

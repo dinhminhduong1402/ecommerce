@@ -1,0 +1,103 @@
+.cart-page-main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .cart-page-container {
+    width: 100vw;
+    max-width: 1200px;
+    padding-bottom: 40px;
+
+    .banner {
+      width: 100vw;
+      height: 300px;
+      max-width: 1200px;
+      background-color: #f9f3f2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .text-wrapper {
+        padding: 0 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .path {
+          font-weight: 200;
+        }
+        
+        h1 {
+          color: #ef4626;
+          font-size: 3rem;
+          font-weight: 200;
+          padding-top: 30px;
+        }
+
+        .decs {
+          font-size: 0.7rem;
+          padding-top: 30px;
+          width: 60%;
+        }
+      }
+    }
+
+    .cart-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 80px;
+      padding: 20px;
+
+      .cart-items-wrapper {
+        width: 60%;
+      }
+      .cart-total-wrapper {
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+        padding: 20px;
+        height: fit-content;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        .title {
+          text-align: center;
+        }
+
+        ul {
+          li {
+            display: flex;
+            justify-content: space-between
+          }
+          li + li {
+            padding-top: 10px;
+          }
+        }
+
+        .total-wrapper {
+          display: flex;
+          justify-content: space-between;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        .check-out-btn-wrapper {
+          text-align: center;
+          button {
+            border: none;
+            background-color: #ef4626;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 400;
+            height: 50px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
