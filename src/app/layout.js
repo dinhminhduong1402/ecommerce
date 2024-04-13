@@ -1,6 +1,7 @@
 import { MainLayout } from '../components'
 import { primaryFont } from '../fonts'
 import { DataProvider } from '../context/DataProvider'
+import {AuthProvider} from '@/context/AuthContext'
 // toast messages
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
@@ -18,11 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={primaryFont.className}>
       <body>
-        <DataProvider>
-          <MainLayout>
-            {children}
-          </MainLayout>
-        </DataProvider>
+        <AuthProvider>
+          <DataProvider>
+            <MainLayout>
+              {children}
+            </MainLayout>
+          </DataProvider>
+        </AuthProvider>
         <ToastContainer className={`toastify-custom-style`}
           hideProgressBar={false}
           autoClose={1000}

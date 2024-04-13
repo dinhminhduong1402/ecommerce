@@ -63,7 +63,7 @@ const Header = () => {
         </div>
 
         <div className="right">
-          <Link href={'/'}>
+          <Link href={'/profile'}>
             <CiUser />
           </Link>
 

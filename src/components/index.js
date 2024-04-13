@@ -13,5 +13,7 @@ import RelativeProducts from "./RelativeProducts";
 import CartModalItem from "./CartModalItem";
 import CartModal from "./CartModal";
 import CartItem from "./CartItem";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 
-export { TopNav, Header, Footer, SubFooter, MainLayout, ProductCard, ProductsSlider, BestSellerProduct, FeaturedProduct, PopularCatogory, Pagination, RelativeProducts, CartModalItem, CartModal, CartItem}
+export { TopNav, Header, Footer, SubFooter, MainLayout, ProductCard, ProductsSlider, BestSellerProduct, FeaturedProduct, PopularCatogory, Pagination, RelativeProducts, CartModalItem, CartModal, CartItem, SignIn, SignUp}

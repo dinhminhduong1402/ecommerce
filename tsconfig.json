@@ -32,8 +32,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "src/forms/FormFields/UploadDropzone.jsx"  ],
+    ".next/types/**/*.ts",
+     "src/forms/FormFields/UploadDropzone.jsx"  ],
   "exclude": [
     "node_modules"
   ]
