@@ -1,10 +1,11 @@
 'use client'
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { subFont } from '../../fonts'
 import './CartPage.scss'
 import { DataContext } from '@/context/DataProvider'
 import { CartItem } from '@/components'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const CartPage = () => {
   
@@ -62,7 +63,7 @@ const CartPage = () => {
             </div>
             <div className='check-out-btn-wrapper'>
               <Link href={'/checkout'}>
-                <button>CHECK OUT</button>
+                <button>CHECK OUT WITH ZALO PAY</button>
               </Link>
             </div>
             
