@@ -46,7 +46,7 @@ const CartPage = () => {
             <ul className='total-detail-wrapper'>
               <li>
                 <span>Subtotal:</span>
-                <span>{cartTotal + '$'}</span>
+                <span>{cartTotal + 'đ'}</span>
               </li>
               <li>
                 <span>Delivery:</span>
@@ -59,7 +59,7 @@ const CartPage = () => {
             </ul>
             <div className='total-wrapper'>
               <span className='total-title'>Total:</span>
-              <span className='total-price'>{cartTotal + '$'}</span>
+              <span className='total-price'>{cartTotal + 'đ'}</span>
             </div>
             <div className='check-out-btn-wrapper'>
               <Link href={'/checkout'}>

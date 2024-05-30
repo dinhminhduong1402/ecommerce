@@ -23,7 +23,7 @@ const ProductsPage = () => {
             <div className='filters-wrapper'>
               <h4>PRODUCT CATEGORIES</h4>
               <ul>
-                {products.map(prod => prod.catogory).filter((ctg, ind, arr) => arr.indexOf(ctg) === ind).map((ite, i) => 
+                {products?.map(prod => prod.catogory).filter((ctg, ind, arr) => arr.indexOf(ctg) === ind).map((ite, i) => 
                 <li key={i}>
                   <input type='checkbox' value={ite}/>
                   <h5>{ite}</h5>

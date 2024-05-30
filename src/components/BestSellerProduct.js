@@ -18,7 +18,7 @@ const BestSellerProduct = () => {
 
         <div className="products-slider">
           <ProductsSlider>
-            {bsProducts.map((prod, ind) => (
+            {bsProducts?.map((prod, ind) => (
               <ProductCard
                 key={ind}
                 productThumb={prod.thumbs && prod.thumbs[0]}

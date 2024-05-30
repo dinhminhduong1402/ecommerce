@@ -72,7 +72,7 @@ const CartItem = ({productThumb, productName, qty, productPrice}) => {
             <button onClick={handleIncrease}>+</button>
           </div>
 
-          <span className='price'>{'x ' + productPrice.toFixed(2) + '$'}</span>
+          <span className='price'>{'x ' + productPrice.toFixed(2) + 'đ'}</span>
         </div>
 
       </div>

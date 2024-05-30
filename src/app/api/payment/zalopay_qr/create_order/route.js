@@ -10,6 +10,8 @@ const embed_data = { zlppaymentid: "P271021" };
 const items = [{}]; // todo: collect items from Cart page
 
 export async function POST(req, res) {
+  const body = await req.json()
+  const {amount} = body
   const transID = Date.now() + Math.floor(Math.random() * 1000);
   const appTransID = `${moment().format('YYMMDD')}_${transID}`;
   const order = {
@@ -19,11 +21,11 @@ export async function POST(req, res) {
     app_time: Date.now(), // miliseconds
     item: JSON.stringify(items),
     embed_data: JSON.stringify(embed_data),
-    amount: 500,
+    amount: amount,
     description: `Payment for the order #${transID}`,
     bank_code: "zalopayapp",
-    callback_url: configZLP.callback_url,
-    redirect_url: configZLP.redirect_url,
+    callback_url: 'https://c481-2a09-bac5-d46c-16d2-00-246-ab.ngrok-free.app/api/payment/zalopay_qr/callback',
+    // redirect_url: configZLP.redirect_url,
   };
 
   const data = [configZLP.app_id, order.app_trans_id, order.app_user, order.amount, order.app_time, order.embed_data, order.item].join("|");

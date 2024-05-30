@@ -19,7 +19,7 @@ const FeaturedProduct = () => {
 
         <div className="products-slider">
           <ProductsSlider>
-            {products.map((prod, ind) => (
+            {products?.map((prod, ind) => (
               <ProductCard
                 key={ind}
                 productThumb={prod.thumbs && prod.thumbs[0]}

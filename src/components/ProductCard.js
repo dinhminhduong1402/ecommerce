@@ -83,9 +83,9 @@ const ProductCard = ({
 
       <div className="price">
         {productPrevPrice && (
-          <span className="prev-price">{productPrevPrice.toFixed(2) + '$'}</span>
+          <span className="prev-price">{productPrevPrice.toFixed(2) + 'đ'}</span>
         )}
-        <span className="current-price">{productPrice?.toFixed(2) + '$'}</span>
+        <span className="current-price">{productPrice?.toFixed(2) + 'đ'}</span>
       </div>
     </div>
   )
